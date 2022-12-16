@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=civisme
+POSTGRES_USER=WNBLnbiVZHlwkJzpoqQZjDvBrVJdhjbz
+POSTGRES_PASSWORD=aBu74WW007ChFg4fMR6OFJ634ybrDBBsA4XfFsyyub7eErZ8T8iMJ9pbIH11ZCwQ
