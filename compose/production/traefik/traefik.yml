@@ -41,6 +41,16 @@ http:
         # https://docs.traefik.io/master/routing/routers/#certresolver
         certResolver: letsencrypt
 
+    media-router:
+      rule: "Host(`civisme.org`) && PathPrefix(`/media`)"
+      entryPoints:
+        - web-secure
+      service: nginx-media
+      priority: 3
+      tls:
+        # https://docs.traefik.io/master/routing/routers/#certresolver
+        certResolver: letsencrypt
+
     flower-secure-router:
       rule: "Host(`civisme.org`)"
       entryPoints:
