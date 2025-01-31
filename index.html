@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Viewer</title>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
 </head>
 <body>
     <h1>Markdown Files</h1>
@@ -18,6 +18,8 @@
         const folderPath = "books/md"; // Folder containing your Markdown files
         const fileList = document.getElementById("file-list");
         const contentDiv = document.getElementById("content");
+
+        const md = window.markdownit({ html: true });
 
         async function fetchMarkdownFiles() {
             const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`;
@@ -40,7 +42,7 @@
         async function loadMarkdown(url) {
             const response = await fetch(url);
             const markdown = await response.text();
-            contentDiv.innerHTML = marked.parse(markdown);
+            contentDiv.innerHTML = md.render(markdown);
         }
 
         fetchMarkdownFiles();
