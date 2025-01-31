@@ -3,46 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Civisme - Books by Philippe Landeux</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional CSS file -->
+    <title>Markdown Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Civisme</h1>
-        <p>A collection of works by Philippe Landeux.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Available Books</h2>
-            <ul>
-                <!-- Example book list -->
-                <li>
-                    <h3><a href="book1.pdf" target="_blank">Book Title 1</a></h3>
-                    <p>Brief description of the book or link to more info.</p>
-                </li>
-                <li>
-                    <h3><a href="book2.pdf" target="_blank">Book Title 2</a></h3>
-                    <p>Brief description of the book or link to more info.</p>
-                </li>
-                <!-- Add more books as needed -->
-            </ul>
-        </section>
+    <h1>Markdown Files</h1>
+    <ul id="file-list"></ul>
+    <div id="content"></div>
 
-        <section>
-            <h2>Additional Resources</h2>
-            <p>Explore more about civisme, society, and the works of Philippe Landeux.</p>
-            <ul>
-                <li><a href="book1.pdf" target="_blank">Download Book 1 (PDF)</a></li>
-                <li><a href="book2.epub" target="_blank">Download Book 2 (EPUB)</a></li>
-                <!-- Add more formats and resources -->
-            </ul>
-        </section>
-    </main>
+    <script>
+        const repoOwner = "exotriks";
+        const repoName = "civisme";
+        const branch = "master"; // Change to "main" if needed
+        const folderPath = "books/md"; // Folder containing your Markdown files
+        const fileList = document.getElementById("file-list");
+        const contentDiv = document.getElementById("content");
 
-    <footer>
-        <p>&copy; 2025 Civisme.org. All rights reserved.</p>
-    </footer>
+        async function fetchMarkdownFiles() {
+            const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`;
+            const response = await fetch(apiUrl);
+            const files = await response.json();
+            
+            files.forEach(file => {
+                if (file.name.endsWith(".md")) {
+                    const li = document.createElement("li");
+                    const link = document.createElement("a");
+                    link.href = "#";
+                    link.textContent = file.name;
+                    link.onclick = () => loadMarkdown(file.download_url);
+                    li.appendChild(link);
+                    fileList.appendChild(li);
+                }
+            });
+        }
+
+        async function loadMarkdown(url) {
+            const response = await fetch(url);
+            const markdown = await response.text();
+            contentDiv.innerHTML = marked.parse(markdown);
+        }
+
+        fetchMarkdownFiles();
+    </script>
 </body>
 </html>
-
