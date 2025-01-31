@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown Viewer</title>
     <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it-footnote/dist/markdown-it-footnote.min.js"></script>
 </head>
 <body>
     <h1>Markdown Files</h1>
@@ -15,11 +16,12 @@
         const repoOwner = "exotriks";
         const repoName = "civisme";
         const branch = "master"; // Change to "main" if needed
-        const folderPath = "books/md"; // Folder containing your Markdown files
+        const folderPath = "books/md"; // Your Markdown folder
         const fileList = document.getElementById("file-list");
         const contentDiv = document.getElementById("content");
 
-        const md = window.markdownit({ html: true });
+        // Initialize markdown-it with footnote support
+        const md = window.markdownit({ html: true }).use(window.markdownitFootnote);
 
         async function fetchMarkdownFiles() {
             const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`;
