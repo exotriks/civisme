@@ -1,0 +1,7 @@
+title: Civisme Collection
+description: A collection of books about Civisme.
+theme: jekyll-theme-cayman
+collections:
+  books:
+    output: true
+    permalink: /books/:name/
