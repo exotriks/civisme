@@ -11,7 +11,7 @@ A collection of books.
 <ul>
 {% for book in site.books %}
   <li>
-    <a href="{{ book.url }}">{{ book.title }}</a>
+    <a href="{{ book.url }}">{{ book.name }}</a>
   </li>
 {% endfor %}
 </ul>
