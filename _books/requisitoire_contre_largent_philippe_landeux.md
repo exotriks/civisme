@@ -1,3 +1,7 @@
+---
+title: REQUISITOIRE CONTRE LARGENT
+---
+
 # Réquisitoire contre Largent ou théorie de l'égalité.
 
 

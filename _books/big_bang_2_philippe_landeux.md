@@ -1,3 +1,7 @@
+---
+title: BIG BANG 2
+---
+
 # BIG BANG 2 - Le Civisme ou la Révolution sociale - PHILIPPE LANDEUX
 
 > « Révéler au monde quelque chose qui lui importe au premier chef et qu’il ignorait jusque-là, lui montrer son erreur sur quelque point vital de ses intérêts spirituels et temporels, c’est le service le plus important qu’un être humain puisse rendre à ses semblables. » John Stuart Mill

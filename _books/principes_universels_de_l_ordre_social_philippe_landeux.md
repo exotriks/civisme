@@ -1,3 +1,7 @@
+---
+title: PRINCIPES UNIVERSELS DE L’ORDRE SOCIAL
+---
+
 # PRINCIPES UNIVERSELS DE L’ORDRE SOCIAL OU BASES DE LA SOCIÉTÉ À USAGE UNIVERSEL - Philippe Landeux
 
 Tous les Principes de l’ordre social sont bafoués. Cela est inévitable dans un système monétaire. [^1] Mais, aujourd’hui, le désordre est encore aggravé par la perte du simple bon sens, ce bon sens populaire exprimé par les adages ancestraux. Certains ne jurent plus que par l’argent, d’autres par l’Humanité virtuelle ou l’Homme désincarné. Que le commun des mortels déraisonne passe encore ! Mais que l’aberration soit dans les lois elles-mêmes est pire que tout !

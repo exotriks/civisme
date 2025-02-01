@@ -1,3 +1,7 @@
+---
+title: LE MANIFESTE DES PATRICIENS
+---
+
 # MANIFESTE DES PATRICIENS
 
 Postulats du Civisme

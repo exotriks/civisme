@@ -1,9 +1,9 @@
 ---
-title: Civisme Books
+title: Civisme Library
 layout: default
 ---
 
-# Civisme Books
+# Civisme Library
 
 A collection of books.
 

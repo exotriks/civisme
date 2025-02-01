@@ -1,3 +1,7 @@
+---
+title: LA PROPRIETE
+---
+
 # THEORIE DE LA PROPRIETE - PHILIPPE LANDEUX
 
 Auri sacra fames.

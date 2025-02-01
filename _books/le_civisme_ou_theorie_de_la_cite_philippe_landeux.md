@@ -1,3 +1,7 @@
+---
+title: LE CIVISME
+---
+
 # LE CIVISME OU THEORIE DE LA CITE (Société sans argent)-Philippe Landeux
 
 > A l’échelle de l’Humanité, la Révolution est faite. A celle de l’Homme, il ne reste plus qu’à la faire.
