@@ -1,6 +1,6 @@
 title: Civisme Collection
 description: A collection of books about Civisme.
-theme: jekyll-theme-cayman
+remote_theme: sighingnow/jekyll-gitbook
 collections:
   books:
     output: true
