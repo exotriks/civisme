@@ -4,4 +4,4 @@ theme: jekyll-theme-cayman
 collections:
   books:
     output: true
-    permalink: /books/:name/
+    permalink: /books/:title/
