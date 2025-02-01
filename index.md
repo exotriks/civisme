@@ -9,10 +9,9 @@ A collection of books.
 
 ## Available Books
 <ul>
-{% assign books = site.books | uniq %}
-{% for book in books %}
+{% for book in site.books %}
   <li>
-    <a href="{{ book.url }}">{{ book.title }}</a>
+    <a href="{{ book.url | relative_url }}">{{ book.title }}</a>
   </li>
 {% endfor %}
 </ul>
